@@ -54,7 +54,6 @@ class DataAnalysis:
         plt.legend()
         plt.ylabel('ACCURACY')
         plt.xlabel('FACE_DATASET')
-        plt.title('LBPH')
         plt.savefig('a1.png')
         plt.close()
         img = cv2.imread('a1.png')
