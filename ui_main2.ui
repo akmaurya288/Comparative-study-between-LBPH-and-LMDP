@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>944</width>
-    <height>602</height>
+    <width>935</width>
+    <height>670</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <item row="0" column="0" colspan="2">
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>4</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="add_tab">
        <attribute name="title">
@@ -606,6 +606,19 @@
                  <string>Image Captured</string>
                 </property>
                </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
               </item>
               <item>
                <widget class="QLCDNumber" name="lcdNumber">
@@ -1981,424 +1994,312 @@
         </item>
        </layout>
       </widget>
-      <widget class="QWidget" name="analysis1_tab">
-       <attribute name="title">
-        <string>Analysis 1</string>
-       </attribute>
-       <layout class="QGridLayout" name="gridLayout_5">
-        <item row="1" column="0">
-         <widget class="QPushButton" name="an_process_lbph_bt">
-          <property name="text">
-           <string>LBPH</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="0">
-         <widget class="QLabel" name="an_LBPH_label">
-          <property name="minimumSize">
-           <size>
-            <width>448</width>
-            <height>384</height>
-           </size>
-          </property>
-          <property name="maximumSize">
-           <size>
-            <width>640</width>
-            <height>480</height>
-           </size>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="1">
-         <widget class="QLabel" name="an_LMDEP_label">
-          <property name="minimumSize">
-           <size>
-            <width>448</width>
-            <height>384</height>
-           </size>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Box</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Raised</enum>
-          </property>
-          <property name="text">
-           <string/>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="1">
-         <widget class="QPushButton" name="an_process_lmdep_bt">
-          <property name="text">
-           <string>LMDEP</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
       <widget class="QWidget" name="analysis2_tab">
        <attribute name="title">
-        <string>Analysis 2</string>
+        <string>Analysis</string>
        </attribute>
-       <layout class="QGridLayout" name="gridLayout_12">
-        <item row="0" column="0">
-         <widget class="QScrollArea" name="scrollArea">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="sizeConstraint">
+           <enum>QLayout::SetMaximumSize</enum>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QGroupBox" name="an2_face_Dataset_group">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>130</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>130</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>Face Dataset</string>
+            </property>
+            <widget class="QRadioButton" name="an2_radioButton_d1">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>30</y>
+               <width>141</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Face94</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="an2_radioButton_d4">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>80</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>FEI</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="an2_radioButton_d2">
+             <property name="geometry">
+              <rect>
+               <x>220</x>
+               <y>30</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Face95</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="an2_radioButton_d3">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>80</y>
+               <width>111</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>14</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Face96</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="an2_classifiers_group">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>500</width>
+              <height>100</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>525</width>
+              <height>130</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <pointsize>14</pointsize>
+             </font>
+            </property>
+            <property name="title">
+             <string>Classifiers</string>
+            </property>
+            <widget class="QRadioButton" name="an2_radioButton_ED">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>30</y>
+               <width>191</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Euclidean Distance</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="an2_radioButton_KNN">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>70</y>
+               <width>111</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>KNN</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="an2_radioButton_SVM">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>70</y>
+               <width>111</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>SVM</string>
+             </property>
+            </widget>
+            <widget class="QRadioButton" name="an2_radioButton_RF">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>30</y>
+               <width>171</width>
+               <height>31</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Random Forest</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QSlider" name="an2_horizontalSlider">
+             <property name="geometry">
+              <rect>
+               <x>140</x>
+               <y>100</y>
+               <width>281</width>
+               <height>22</height>
+              </rect>
+             </property>
+             <property name="minimum">
+              <number>10</number>
+             </property>
+             <property name="maximum">
+              <number>90</number>
+             </property>
+             <property name="singleStep">
+              <number>10</number>
+             </property>
+             <property name="value">
+              <number>70</number>
+             </property>
+             <property name="tracking">
+              <bool>true</bool>
+             </property>
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="invertedControls">
+              <bool>false</bool>
+             </property>
+             <property name="tickPosition">
+              <enum>QSlider::TicksBothSides</enum>
+             </property>
+             <property name="tickInterval">
+              <number>10</number>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_3">
+             <property name="geometry">
+              <rect>
+               <x>50</x>
+               <y>100</y>
+               <width>81</width>
+               <height>21</height>
+              </rect>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Training %</string>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="an2_slidervalue_lineEdit_2">
+             <property name="geometry">
+              <rect>
+               <x>430</x>
+               <y>100</y>
+               <width>41</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="inputMethodHints">
+              <set>Qt::ImhPreferNumbers</set>
+             </property>
+             <property name="text">
+              <string>70</string>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QPushButton" name="an2_process_bt">
+          <property name="text">
+           <string>Process</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="an2_image_Label_1">
           <property name="minimumSize">
            <size>
             <width>0</width>
             <height>400</height>
            </size>
           </property>
-          <property name="verticalScrollBarPolicy">
-           <enum>Qt::ScrollBarAlwaysOn</enum>
+          <property name="maximumSize">
+           <size>
+            <width>900</width>
+            <height>400</height>
+           </size>
           </property>
-          <property name="widgetResizable">
-           <bool>true</bool>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
           </property>
-          <widget class="QWidget" name="scrollAreaWidgetContents">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>883</width>
-             <height>1011</height>
-            </rect>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout">
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout">
-              <property name="spacing">
-               <number>6</number>
-              </property>
-              <property name="sizeConstraint">
-               <enum>QLayout::SetMinimumSize</enum>
-              </property>
-              <item>
-               <widget class="QGroupBox" name="an2_face_Dataset_group">
-                <property name="maximumSize">
-                 <size>
-                  <width>16777215</width>
-                  <height>150</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                 </font>
-                </property>
-                <property name="title">
-                 <string>Face Dataset</string>
-                </property>
-                <widget class="QRadioButton" name="an2_radioButton_d1">
-                 <property name="geometry">
-                  <rect>
-                   <x>20</x>
-                   <y>30</y>
-                   <width>141</width>
-                   <height>21</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>14</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Face94</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-                <widget class="QRadioButton" name="an2_radioButton_d4">
-                 <property name="geometry">
-                  <rect>
-                   <x>220</x>
-                   <y>80</y>
-                   <width>111</width>
-                   <height>21</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>14</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>FEI</string>
-                 </property>
-                </widget>
-                <widget class="QRadioButton" name="an2_radioButton_d2">
-                 <property name="geometry">
-                  <rect>
-                   <x>220</x>
-                   <y>30</y>
-                   <width>111</width>
-                   <height>21</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>14</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Face95</string>
-                 </property>
-                </widget>
-                <widget class="QRadioButton" name="an2_radioButton_d3">
-                 <property name="geometry">
-                  <rect>
-                   <x>20</x>
-                   <y>80</y>
-                   <width>111</width>
-                   <height>21</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>14</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Face96</string>
-                 </property>
-                </widget>
-               </widget>
-              </item>
-              <item>
-               <widget class="QGroupBox" name="an2_classifiers_group">
-                <property name="minimumSize">
-                 <size>
-                  <width>500</width>
-                  <height>150</height>
-                 </size>
-                </property>
-                <property name="maximumSize">
-                 <size>
-                  <width>525</width>
-                  <height>150</height>
-                 </size>
-                </property>
-                <property name="font">
-                 <font>
-                  <pointsize>14</pointsize>
-                 </font>
-                </property>
-                <property name="title">
-                 <string>Classifiers</string>
-                </property>
-                <widget class="QRadioButton" name="an2_radioButton_ED">
-                 <property name="geometry">
-                  <rect>
-                   <x>230</x>
-                   <y>30</y>
-                   <width>191</width>
-                   <height>31</height>
-                  </rect>
-                 </property>
-                 <property name="text">
-                  <string>Euclidean Distance</string>
-                 </property>
-                </widget>
-                <widget class="QRadioButton" name="an2_radioButton_KNN">
-                 <property name="geometry">
-                  <rect>
-                   <x>230</x>
-                   <y>70</y>
-                   <width>111</width>
-                   <height>31</height>
-                  </rect>
-                 </property>
-                 <property name="text">
-                  <string>KNN</string>
-                 </property>
-                </widget>
-                <widget class="QRadioButton" name="an2_radioButton_SVM">
-                 <property name="geometry">
-                  <rect>
-                   <x>30</x>
-                   <y>70</y>
-                   <width>111</width>
-                   <height>31</height>
-                  </rect>
-                 </property>
-                 <property name="text">
-                  <string>SVM</string>
-                 </property>
-                </widget>
-                <widget class="QRadioButton" name="an2_radioButton_RF">
-                 <property name="geometry">
-                  <rect>
-                   <x>30</x>
-                   <y>30</y>
-                   <width>171</width>
-                   <height>31</height>
-                  </rect>
-                 </property>
-                 <property name="text">
-                  <string>Random Forest</string>
-                 </property>
-                 <property name="checked">
-                  <bool>true</bool>
-                 </property>
-                </widget>
-                <widget class="QSlider" name="an2_horizontalSlider">
-                 <property name="geometry">
-                  <rect>
-                   <x>140</x>
-                   <y>120</y>
-                   <width>281</width>
-                   <height>22</height>
-                  </rect>
-                 </property>
-                 <property name="minimum">
-                  <number>10</number>
-                 </property>
-                 <property name="maximum">
-                  <number>90</number>
-                 </property>
-                 <property name="singleStep">
-                  <number>10</number>
-                 </property>
-                 <property name="value">
-                  <number>70</number>
-                 </property>
-                 <property name="tracking">
-                  <bool>true</bool>
-                 </property>
-                 <property name="orientation">
-                  <enum>Qt::Horizontal</enum>
-                 </property>
-                 <property name="invertedControls">
-                  <bool>false</bool>
-                 </property>
-                 <property name="tickPosition">
-                  <enum>QSlider::TicksBothSides</enum>
-                 </property>
-                 <property name="tickInterval">
-                  <number>10</number>
-                 </property>
-                </widget>
-                <widget class="QLabel" name="label_3">
-                 <property name="geometry">
-                  <rect>
-                   <x>50</x>
-                   <y>120</y>
-                   <width>81</width>
-                   <height>21</height>
-                  </rect>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <pointsize>12</pointsize>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Training %</string>
-                 </property>
-                </widget>
-                <widget class="QLineEdit" name="an2_slidervalue_lineEdit_2">
-                 <property name="geometry">
-                  <rect>
-                   <x>430</x>
-                   <y>120</y>
-                   <width>41</width>
-                   <height>20</height>
-                  </rect>
-                 </property>
-                 <property name="inputMethodHints">
-                  <set>Qt::ImhPreferNumbers</set>
-                 </property>
-                 <property name="text">
-                  <string>70</string>
-                 </property>
-                </widget>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <widget class="QPushButton" name="an2_process_bt">
-              <property name="text">
-               <string>Process</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="an2_image_Label_1">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>400</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>900</width>
-                <height>400</height>
-               </size>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::Box</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Sunken</enum>
-              </property>
-              <property name="lineWidth">
-               <number>2</number>
-              </property>
-              <property name="midLineWidth">
-               <number>1</number>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QLabel" name="an2_image_Label_2">
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>400</height>
-               </size>
-              </property>
-              <property name="maximumSize">
-               <size>
-                <width>16777215</width>
-                <height>400</height>
-               </size>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::Box</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Sunken</enum>
-              </property>
-              <property name="lineWidth">
-               <number>2</number>
-              </property>
-              <property name="midLineWidth">
-               <number>1</number>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
+          </property>
+          <property name="lineWidth">
+           <number>2</number>
+          </property>
+          <property name="midLineWidth">
+           <number>1</number>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
          </widget>
         </item>
        </layout>
